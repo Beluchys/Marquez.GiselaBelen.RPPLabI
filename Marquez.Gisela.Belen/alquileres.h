@@ -16,63 +16,79 @@ typedef struct{
 
 #endif // ALQUILERES_H_INCLUDED
 
-/** \brief Inicializa Alquieres
+/** \brief Inicializa un array de alquileres, poniendo todos los campos de isEmpty en 1
  *
- * \param aAlquileres[] eAlquiler
- * \param tamAlq int
- * \return int
+ * \param aAlquileres[] eAlquiler array de alquileres
+ * \param tamAlq int tamaño del array de alquileres
+ * \return int retorna -1 si ERROR o 0 si pudo inicializar el array
  *
  */
 int inicializarAlquileres(eAlquiler aAlquileres[], int tamAlq);
-/** \brief  Nos muestra solo un alquiler
+/** \brief Muestra por pantalla un alquiler
  *
- * \param unAlquiler eAlquiler
- * \param aClientes[] eCliente
- * \param tamCli int
- * \param aJuegos[] eJuego
- * \param tamJue int
+ * \param unAlquiler eAlquiler el alquiler a mostrar
+ * \param aClientes[] eCliente array de clientes
+ * \param tamCli int tamaño del array de clientes
+ * \param aJuegos[] eJuego array de juegos
+ * \param tamJue int tamaño del array de juegos
  * \return void
  *
  */
 void mostrarUnAlquiler(eAlquiler unAlquiler, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue);
-/** \brief Nos muestra todos los alquileres
+/** \brief Muestra por pantalla un listado de alquileres dados de alta
  *
- * \param aAlquileres[] eAlquiler
- * \param tamAlq int
- * \param aClientes[] eCliente
- * \param tamCli int
- * \param aJuegos[] eJuego
- * \param tamJue int
- * \return int
+ * \param aAlquileres[] eAlquiler array de alquileres
+ * \param tamAlq int tamaño del array de alquileres
+ * \param aClientes[] eCliente array de clientes
+ * \param tamCli int tamaño del array de clientes
+ * \param aJuegos[] eJuego array de juegos
+ * \param tamJue int tamaño del array de juegos
+ * \return int retorna -1 si ERROR o 0 si pudo mostrar el array
  *
  */
 int mostrarAlquileres(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue);
-/** \brief Busca espacio en el array para mas alquileres
+/** \brief Busca el primer lugar libre en el array de alquileres
  *
- * \param aAlquileres[] eAlquiler
- * \param tamAlq int
- * \return int
+ * \param aAlquileres[] eAlquiler array de alquileres
+ * \param tamAlq int tamaño del array de alquileres
+ * \return int Retorna -1 si ERROR o el indice donde se almacenara el nuevo alquiler
  *
  */
 int buscarLibreAlquiler(eAlquiler aAlquileres[], int tamAlq);
-/** \brief Busca un alquiler
+/** \brief Busca un alquiler por su ID
  *
- * \param aAlquileres[] eAlquiler
- * \param tamAlq int
- * \param codigoBuscado int
- * \return int
+ * \param aAlquileres[] eAlquiler array de alquileres
+ * \param tamAlq int tamaño del array de alquileress
+ * \param codigoBuscado int id del alquiler buscado
+ * \return int retorna -1 si ERROR o el indice del alquiler encontrado
  *
  */
 int buscarUnAlquiler(eAlquiler aAlquileres[], int tamAlq, int codigoBuscado);
-/** \brief Da de alta alquileres
+/** \brief Da de alta un nuevo alquiler pidiendo todos los datos y asignandole un ID autoincremental
  *
- * \param
- * \param
- * \return
+ * \param aAlquileres[] eAlquiler array de alquileres
+ * \param tamAlq int tamaño del array de alquileres
+ * \param aClientes[] eCliente array de clientes
+ * \param tamCli int tamaño del array de clientes
+ * \param aJuegos[] eJuego array de juegos
+ * \param tamJue int tamaño del array de juegos
+ * \param aCategorias[] eCategorias array de categorias
+ * \param tamJue int tamaño del array de categorias
+ * \param pIdAlquiler int* direccion de memoria del id a asignar
+ * \return int retorna -1 si ERROR o 0 si pudo dar el alta
  *
  */
 int altaAlquiler(eAlquiler aAlquileres[], int tamAlq,eCliente aClientes[], int tamCli,eJuego aJuegos[], int tamJue,
                  eCategoria aCategorias[], int tamCat, int* pIdAlquiler,eLocalidad aLocalidades[], int tamLoc);
+/** \brief Realiza la baja logica de un cliente y todos sus alquileres
+ *
+ * \param aClientes[] eCliente array de clientes
+ * \param tamCli int tamaño del array de clientes
+ * \param aAlquileres[] eAlquiler array de alquileres
+ * \param tamAlq int tamaño del array de alquileres
+ * \return int retorna -1 si ERROR o 0 si pudo realizar la baja
+ *
+ */
 int bajaClienteYAlquileres(eCliente aClientes[], int tamCli, eAlquiler aAlquileres[], int tamAlq, eLocalidad aLocalidades[], int tamLoc);
 /** \brief Baja un alquiler y   cliente
  *
@@ -83,15 +99,166 @@ int bajaClienteYAlquileres(eCliente aClientes[], int tamCli, eAlquiler aAlquiler
  *
  */
 int bajaAlquileresXCliente(eAlquiler aAlquileres[], int tamAlq, int codCliente);
+/** \brief
+ *
+ * \param aAlquileres[] eAlquiler
+ * \param tamAlq int
+ * \param aClientes[] eCliente
+ * \param tamCli int
+ * \param aJuegos[] eJuego
+ * \param tamJue int
+ * \return int
+ *
+ */
 int bajaAlquilerIndividual(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue);
+/** \brief
+ *
+ * \param aAlquileres[] eAlquiler
+ * \param tamAlq int
+ * \param aClientes[] eCliente
+ * \param tamCli int
+ * \param aJuegos[] eJuego
+ * \param tamJue int
+ * \param aCategorias[] eCategoria
+ * \param tamCat int
+ * \param aLocalidades[] eLocalidad
+ * \param tamLoc int
+ * \return int
+ *
+ */
 int mostrarAlquileresDeUnCliente(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat, eLocalidad aLocalidades[], int tamLoc);
+/** \brief
+ *
+ * \param aAlquileres[] eAlquiler
+ * \param tamAlq int
+ * \param aClientes[] eCliente
+ * \param tamCli int
+ * \param aJuegos[] eJuego
+ * \param tamJue int
+ * \param aCategorias[] eCategoria
+ * \param tamCat int
+ * \param aLocalidades[] eLocalidad
+ * \param tamLoc int
+ * \return int
+ *
+ */
 int pagosDeCliente(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat, eLocalidad aLocalidades[], int tamLoc);
+/** \brief
+ *
+ * \param aAlquileres[] eAlquiler
+ * \param tamAlq int
+ * \param aClientes[] eCliente
+ * \param tamCli int
+ * \param aLocalidades[] eLocalidad
+ * \param tamLoc int
+ * \return int
+ *
+ */
 int mostrarClientesSinAlquileres(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eLocalidad aLocalidades[], int tamLoc);
+/** \brief
+ *
+ * \param aAlquileres[] eAlquiler
+ * \param tamAlq int
+ * \param aJuegos[] eJuego
+ * \param tamJue int
+ * \param aCategorias[] eCategoria
+ * \param tamCat int
+ * \return int
+ *
+ */
 int mostrarJuegosSinAlquileres(eAlquiler aAlquileres[], int tamAlq, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat);
+/** \brief
+ *
+ * \param aAlquileres[] eAlquiler
+ * \param tamAlq int
+ * \param aClientes[] eCliente
+ * \param tamCli int
+ * \return int
+ *
+ */
 int listarTelefonosClientesPorFechaDeAlquiler(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli);
+/** \brief
+ *
+ * \param aAlquileres[] eAlquiler
+ * \param tamAlq int
+ * \param aClientes[] eCliente
+ * \param tamCli int
+ * \param aJuegos[] eJuego
+ * \param tamJue int
+ * \param aCategorias[] eCategoria
+ * \param tamCat int
+ * \param aLocalidades[] eLocalidad
+ * \param tamLoc int
+ * \return int
+ *
+ */
 int listarJuegosAlquiladosPorMujeres(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat, eLocalidad aLocalidades[], int tamLoc);
+/** \brief
+ *
+ * \param aAlquileres[] eAlquiler
+ * \param tamAlq int
+ * \param aClientes[] eCliente
+ * \param tamCli int
+ * \param aJuegos[] eJuego
+ * \param tamJue int
+ * \param aCategorias[] eCategoria
+ * \param tamCat int
+ * \return int
+ *
+ */
 int juegosMasAlquiladosPorHombres(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat);
+/** \brief
+ *
+ * \param aAlquileres[] eAlquiler
+ * \param tamAlq int
+ * \param aClientes[] eCliente
+ * \param tamCli int
+ * \param aJuegos[] eJuego
+ * \param tamJue int
+ * \param aCategorias[] eCategoria
+ * \param tamCat int
+ * \param aLocalidades[] eLocalidad
+ * \param tamLoc int
+ * \return int
+ *
+ */
 int clientesQueAlquilaronJuegoEspecifico(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat, eLocalidad aLocalidades[], int tamLoc);
+/** \brief
+ *
+ * \param aAlquileres[] eAlquiler
+ * \param tamAlq int
+ * \param aClientes[] eCliente
+ * \param tamCli int
+ * \param aJuegos[] eJuego
+ * \param tamJue int
+ * \param aCategorias[] eCategoria
+ * \param tamCat int
+ * \return int
+ *
+ */
 int juegosMasAlquiladosPorMujeres(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat);
+/** \brief
+ *
+ * \param alquileres[] eAlquiler
+ * \param tamAlq int
+ * \param idAlquiler int
+ * \return int
+ *
+ */
 int buscarAquiler(eAlquiler alquileres[], int tamAlq, int idAlquiler);
+/** \brief
+ *
+ * \param aAlquileres[] eAlquiler
+ * \param tamAlq int
+ * \param aClientes[] eCliente
+ * \param tamCli int
+ * \param aJuegos[] eJuego
+ * \param tamJue int
+ * \param aCategorias[] eCategoria
+ * \param tamCat int
+ * \param aLocalidades[] eLocalidad
+ * \param tamLoc int
+ * \return int
+ *
+ */
 int bajaAlquiler(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli,eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat, eLocalidad aLocalidades[], int tamLoc );

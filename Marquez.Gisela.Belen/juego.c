@@ -114,3 +114,4 @@ int mostrarJuegosDeCategoriaMesa(eJuego aJuegos[], int tamJue, eCategoria aCateg
     return retorno;
 }
 
+
