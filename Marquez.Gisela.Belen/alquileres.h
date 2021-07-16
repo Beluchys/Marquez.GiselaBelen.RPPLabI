@@ -99,7 +99,7 @@ int bajaClienteYAlquileres(eCliente aClientes[], int tamCli, eAlquiler aAlquiler
  *
  */
 int bajaAlquileresXCliente(eAlquiler aAlquileres[], int tamAlq, int codCliente);
-/** \brief
+/** \brief hace la baja de un alquiler de manera individual
  *
  * \param aAlquileres[] eAlquiler
  * \param tamAlq int
@@ -111,7 +111,7 @@ int bajaAlquileresXCliente(eAlquiler aAlquileres[], int tamAlq, int codCliente);
  *
  */
 int bajaAlquilerIndividual(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue);
-/** \brief
+/** \brief lista los alquileres de un cliente en especifico
  *
  * \param aAlquileres[] eAlquiler
  * \param tamAlq int
@@ -127,7 +127,7 @@ int bajaAlquilerIndividual(eAlquiler aAlquileres[], int tamAlq, eCliente aClient
  *
  */
 int mostrarAlquileresDeUnCliente(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat, eLocalidad aLocalidades[], int tamLoc);
-/** \brief
+/** \brief muestra el pago por un cliente en especifico
  *
  * \param aAlquileres[] eAlquiler
  * \param tamAlq int
@@ -143,7 +143,7 @@ int mostrarAlquileresDeUnCliente(eAlquiler aAlquileres[], int tamAlq, eCliente a
  *
  */
 int pagosDeCliente(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat, eLocalidad aLocalidades[], int tamLoc);
-/** \brief
+/** \brief lista los cliente que no poseen alquileres
  *
  * \param aAlquileres[] eAlquiler
  * \param tamAlq int
@@ -155,7 +155,7 @@ int pagosDeCliente(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], in
  *
  */
 int mostrarClientesSinAlquileres(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eLocalidad aLocalidades[], int tamLoc);
-/** \brief
+/** \brief muestra los juegos que no fueron alquilados
  *
  * \param aAlquileres[] eAlquiler
  * \param tamAlq int
@@ -167,7 +167,7 @@ int mostrarClientesSinAlquileres(eAlquiler aAlquileres[], int tamAlq, eCliente a
  *
  */
 int mostrarJuegosSinAlquileres(eAlquiler aAlquileres[], int tamAlq, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat);
-/** \brief
+/** \brief lista telefonos de lciente por fecha de alquiler
  *
  * \param aAlquileres[] eAlquiler
  * \param tamAlq int
@@ -177,7 +177,7 @@ int mostrarJuegosSinAlquileres(eAlquiler aAlquileres[], int tamAlq, eJuego aJueg
  *
  */
 int listarTelefonosClientesPorFechaDeAlquiler(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli);
-/** \brief
+/** \brief lista todos los juegos alquilados por mujeres
  *
  * \param aAlquileres[] eAlquiler
  * \param tamAlq int
@@ -193,7 +193,7 @@ int listarTelefonosClientesPorFechaDeAlquiler(eAlquiler aAlquileres[], int tamAl
  *
  */
 int listarJuegosAlquiladosPorMujeres(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat, eLocalidad aLocalidades[], int tamLoc);
-/** \brief
+/** \brief lista los juegos mas alquilados por hombres
  *
  * \param aAlquileres[] eAlquiler
  * \param tamAlq int
@@ -207,7 +207,7 @@ int listarJuegosAlquiladosPorMujeres(eAlquiler aAlquileres[], int tamAlq, eClien
  *
  */
 int juegosMasAlquiladosPorHombres(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat);
-/** \brief
+/** \brief lista los clientes que alquilaron un juego en especifico
  *
  * \param aAlquileres[] eAlquiler
  * \param tamAlq int
@@ -223,7 +223,7 @@ int juegosMasAlquiladosPorHombres(eAlquiler aAlquileres[], int tamAlq, eCliente 
  *
  */
 int clientesQueAlquilaronJuegoEspecifico(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat, eLocalidad aLocalidades[], int tamLoc);
-/** \brief
+/** \brief lista los juegos mas alquilados por mujeres
  *
  * \param aAlquileres[] eAlquiler
  * \param tamAlq int
@@ -237,7 +237,7 @@ int clientesQueAlquilaronJuegoEspecifico(eAlquiler aAlquileres[], int tamAlq, eC
  *
  */
 int juegosMasAlquiladosPorMujeres(eAlquiler aAlquileres[], int tamAlq, eCliente aClientes[], int tamCli, eJuego aJuegos[], int tamJue, eCategoria aCategorias[], int tamCat);
-/** \brief
+/** \brief busca un alquiler por id
  *
  * \param alquileres[] eAlquiler
  * \param tamAlq int
@@ -246,7 +246,7 @@ int juegosMasAlquiladosPorMujeres(eAlquiler aAlquileres[], int tamAlq, eCliente 
  *
  */
 int buscarAquiler(eAlquiler alquileres[], int tamAlq, int idAlquiler);
-/** \brief
+/** \brief baja solo un alquiler
  *
  * \param aAlquileres[] eAlquiler
  * \param tamAlq int

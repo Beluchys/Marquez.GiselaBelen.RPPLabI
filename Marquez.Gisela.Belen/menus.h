@@ -1,13 +1,13 @@
 #ifndef MENUS_H_INCLUDED
 #define MENUS_H_INCLUDED
 
-/** \brief
+/** \brief Menu principal
  *
  * \return int
  *
  */
 int menuOpciones();
-/** \brief
+/** \brief menu de modificaciones de clientes
  *
  * \return int
  *
