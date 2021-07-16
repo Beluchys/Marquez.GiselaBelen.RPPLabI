@@ -1,0 +1,93 @@
+# depslib dependency file v1.0
+1626477810 source:c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\menus.c
+	"menus.h"
+
+1626470048 c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\menus.h
+
+1626461863 source:c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"categoria.h"
+
+1626469892 c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\categoria.h
+
+1626465648 source:c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"juego.h"
+	"categoria.h"
+	"validaciones_marquez.h"
+
+1626469985 c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\juego.h
+	"categoria.h"
+
+1626471178 c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\validaciones_marquez.h
+
+1626460091 source:c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\localidad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"localidad.h"
+
+1626470023 c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\localidad.h
+
+1626477726 source:c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"alquileres.h"
+	"cliente.h"
+	"juego.h"
+	"categoria.h"
+	"localidad.h"
+	"validaciones_marquez.h"
+
+1626477950 c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\alquileres.h
+	"fecha.h"
+	"cliente.h"
+	"juego.h"
+	"categoria.h"
+
+1626458775 c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\fecha.h
+
+1626458815 c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\cliente.h
+	"localidad.h"
+
+1626476930 source:c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cliente.h"
+	"validaciones_marquez.h"
+
+1626470429 source:c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\datawarehouse.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"dataWarehouse.h"
+
+1626470392 c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\datawarehouse.h
+	"juego.h"
+	"categoria.h"
+	"cliente.h"
+	"alquileres.h"
+	"localidad.h"
+
+1626477773 source:c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validaciones_marquez.h"
+	"dataWarehouse.h"
+	"cliente.h"
+	"alquileres.h"
+
+1626459299 source:c:\users\gmarquez\desktop\utn\1er cuatrimestre\laboratorio i y programaci”n i\terminado recuperatorio\marquez.gisela.belen\validaciones_marquez.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"validaciones_marquez.h"
+
